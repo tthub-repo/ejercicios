@@ -7,3 +7,4 @@ Ejercicios en TTHUB
 4. [Codificación de un poema (Lorca)](https://tthub-repo.github.io/ejercicios/4.Codificacion-poema-Lorca_I)
 5. [Codificación de una biografía (Fernán Pérez de Guzmán)](https://tthub-repo.github.io/ejercicios/5.Codificacion-biografia)
 6. [Codificación de un texto en prosa (Quijote)](https://tthub-repo.github.io/ejercicios/6.Prosa_Quijote)
+7. [Codificación de verso y aparato crítico (Garcilaso)](https://tthub-repo.github.io/ejercicios/7.Poesia_Garcilaso)
