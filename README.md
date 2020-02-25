@@ -8,3 +8,4 @@ Ejercicios en TTHUB
 5. [Codificación de una biografía (Fernán Pérez de Guzmán)](https://tthub-repo.github.io/ejercicios/5.Codificacion-biografia)
 6. [Codificación de un texto en prosa (Quijote)](https://tthub-repo.github.io/ejercicios/6.Prosa_Quijote)
 7. [Codificación de verso y aparato crítico (Garcilaso)](https://tthub-repo.github.io/ejercicios/7.Poesia_Garcilaso)
+8. [Codificación de texto dramático y fuente primaria (Lope de Vega)](https://tthub-repo.github.io/ejercicios/8.Teatro_Lope)
