@@ -16,6 +16,7 @@ Hasta el momento, en abril 2020, se ofrecen 8 ejercicios:
 6. [Codificación de un texto en prosa (Quijote)](https://tthub-repo.github.io/ejercicios/6.Prosa_Quijote)
 7. [Codificación de verso y aparato crítico (Garcilaso)](https://tthub-repo.github.io/ejercicios/7.Poesia_Garcilaso)
 8. [Codificación de texto dramático y fuente primaria (Lope de Vega)](https://tthub-repo.github.io/ejercicios/8.Teatro_Lope)
+9. [Transformación de un documento XML-TEI con Oxygen](https://tthub-repo.github.io/ejercicios/9.Ej_transformacion)
 
 El proyecto está abierto a colaboración y nos gustaría que el elenco de ejercicios fuera incrementándose para poder así tener más materiales disponibles a la hora de enseñar y aprender tecnologías del texto y, en especial, la Text Encoding Initiative.
 
