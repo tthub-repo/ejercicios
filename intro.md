@@ -2,11 +2,11 @@
 
 Este repositorio alberga una serie de ejercicios sobre tecnologías del texto y edición digital del proyecto TTHUB <https://tthub.io> coordinado por [Susanna Allés Torrent](http://susannalles.com) (University of Miami) y [Gimena del Rio Riande](https://www.aacademica.org/gimena.delrio.riande) (CONICET), con la colaboración de Gabriel Calarco.
 
-La mayoría de estos ejercicios se relacionan con las Lecciones presentes en TTHub, accesible tanto desde su sitio web <https://tthub.io/aprende/> como desde el repositorio [Lecciones](https://github.com/tthub-repo/lecciones).
+La mayoría de estos ejercicios se relacionan con las Lecciones presentes en TTHub, accesible tanto desde su sitio web <https://tthub.io/aprende/>.
 
 Hasta el momento, en abril 2020, se ofrecen 8 ejercicios:
 
-1. [Instrucciones para la instalación de Oxygen]([https://tthub-repo.github.io/ejercicios/1.Instrucciones-instalacion-oXygen](https://tthub.io/beta/aprende/ejercicios/instrucciones-para-la-instalacion-de-oxygen)
+1. [Instrucciones para la instalación de Oxygen](https://tthub-repo.github.io/ejercicios/1.Instrucciones-instalacion-oXygen](https://tthub.io/beta/aprende/ejercicios/instrucciones-para-la-instalacion-de-oxygen)
 2. [Creación de un documento XML](https://tthub.io/beta/aprende/ejercicios/creacion-de-un-documento-xml)
 3. [Creación de un documento TEI](https://tthub.io/beta/aprende/ejercicios/creacion-de-un-documento-tei)
 4. [Codificación de un poema (Lorca)](https://tthub.io/beta/aprende/ejercicios/codificacion-de-un-poema-lorca)
