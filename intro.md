@@ -6,7 +6,7 @@ La mayoría de estos ejercicios se relacionan con las Lecciones presentes en TTH
 
 Hasta el momento, en septiembre 2022, se ofrecen 9 ejercicios:
 
-1. [Instrucciones para la instalación de Oxygen](https://tthub-repo.github.io/ejercicios/1.Instrucciones-instalacion-oXygen](https://tthub.io/beta/aprende/ejercicios/instrucciones-para-la-instalacion-de-oxygen)
+1. [Instrucciones para la instalación de Oxygen](https://tthub.io/beta/aprende/ejercicios/instrucciones-para-la-instalacion-de-oxygen)
 2. [Creación de un documento XML](https://tthub.io/beta/aprende/ejercicios/creacion-de-un-documento-xml)
 3. [Creación de un documento TEI](https://tthub.io/beta/aprende/ejercicios/creacion-de-un-documento-tei)
 4. [Codificación de un poema (Lorca)](https://tthub.io/beta/aprende/ejercicios/codificacion-de-un-poema-lorca)
