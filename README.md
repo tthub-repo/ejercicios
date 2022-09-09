@@ -1,8 +1,8 @@
 # Introducción 
 
-Este repositorio alberga una serie de ejercicios sobre tecnologías del texto y edición digital del proyecto TTHUB <https://tthub.io> coordinado por [Susanna Allés Torrent](http://susannalles.com) (University of Miami) y [Gimena del Rio Riande](https://www.aacademica.org/gimena.delrio.riande) (CONICET), con la colaboración de Gabriel Calarco.
+Este repositorio alberga una serie de ejercicios sobre tecnologías del texto y edición digital del proyecto TTHUB <https://tthub.io> coordinado por [Susanna Allés Torrent](http://susannalles.com) (University of Miami) y [Gimena del Rio Riande](https://www.aacademica.org/gimena.delrio.riande) (CONICET), con la colaboración de [Gabriel Calarco](https://www.aacademica.org/gabriel.calarco).
 
-La mayoría de estos ejercicios se relacionan con las Lecciones presentes en TTHub, accesible tanto desde su sitio web <https://tthub.io/aprende/>.
+La mayoría de estos ejercicios se relacionan con los tutoriales y lecciones presentes en TTHub en la sección [Aprende](https://tthub.io/aprende) y se publican en el apartado de [Ejercicios](https://tthub.io/aprende/ejercicios/).
 
 Hasta el momento, en septiembre 2022, se ofrecen 9 ejercicios:
 
