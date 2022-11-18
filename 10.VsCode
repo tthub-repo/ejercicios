@@ -1,0 +1,107 @@
+---
+title: Ejercicio de codificación con VsCode 
+layout: default
+---
+
+# Instalación de VS Code 
+
+1. Descarga e instalación: <https://code.visualstudio.com/Download>
+
+2. Configurar la lengua, buscando "Configure language", y elijan el idioma que quieran. 
+
+3. Instalación del plugin [Scholarly XML](https://marketplace.visualstudio.com/items?itemName=raffazizzi.sxml), siguiendo [estos pasos](https://tthub.io/aprende/tutorial/edicion-digital-con-VS-code/edicion-digital-con-VS-code/scholarly_xml) en el tutorial. 
+
+4. Intalar el plugin de [TEI Publisher](https://teipublisher.com/index.html), desde el programa [VS Code](https://marketplace.visualstudio.com/items?itemName=e-editiones.tei-publisher-vscode).
+
+
+# Codificación de la biografía de Catalina de Lancaster (Fernán Pérez de Guzmán, s. XV)
+
+Para este ejercicio codificaremos una brevísima biografía de [Catalina de Lancaster](https://es.wikipedia.org/wiki/Catalina_de_Lancaster) escrita por [Fernán Pérez de Guzmán](https://es.wikipedia.org/wiki/Fern%C3%A1n_P%C3%A9rez_de_Guzm%C3%A1n) hacia el año 1450. Para ello, utilizaremos la siguiente edición de la que más abajo tenéis la reproducción:
+
+>> Fernán Pérez de Guzmán, *Generaciones y semblanzas*. ed. Domínguez Bordona, Barcelona 1924.
+
+Los pasos a seguir son muy parecidos a los que hemos hecho anteriormente.  
+
+**[Paso 1]** Cread un documento XML-TEI (con el programa VsCode). 
+
+**[Paso 2]** Utilizad como declaración un esquema TEI All y copiad esta plantilla: 
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+  </text>
+</TEI>
+```
+
+**[Paso 3]** En el elemento `<teiHeader>` tendréis que completar las siguientes informaciones:
+
+- `<title>`: título de vuestro archivo digital (algo como "Codificación de la biografía de Catalina de Lancaster escrita por Fernán Pérez de Guzmán" por ejemplo.
+- `<author>`: irá vuestro nombre
+- `<publicationStmt>`: las informaciones donde se ha realizado la codificación del archivo.  
+- `<sourceDesc>`: la fuente original en la que se basará vuestra edición. Para ello, sugiero que utilices el siguiente esquema:
+
+```xml
+<bibl>
+	<author></author>
+	<title></title>
+	<pubPlace></pubPlace>
+	<publisher></publisher>
+	<date></date>
+	<biblScope></biblScope>
+</bibl>
+```
+
+Sabiendo que la cita bibliográfica sería esta: Fernán Pérez de Guzmán, *Generaciones y semblanzas*. ed. Domínguez Bordona, Barcelona 1924, pp. 19-20.
+
+**[Paso 3]** En el cuerpo del documento `text > body`debéis codificar el texto. Para facilitaros el ejercicio, aquí tenéis una transcripción fiel:
+
+```txt
+Doña Catalina de Lancaster
+La reina doña Catalina, muger deste rey don Enrique, fue fija de don Iohan de Lencastre, fijo ligitimo del rey Aduarte de Inguelaterra, el cual duque caso con doña Costança, fija del rey don Pedro de Castilla e de doña Maria de Padilla.
+Fue esta reina alta de cuerpo e muy gruesa, blanca e colorada e rubia. En el talle e meneo del cuerpo tanto pareçia onbre como muger. Fue muy onesta e guardada en su presona e fama, liberal e manifica, pero muy sometida a priuados e muy regida dellos, lo cual, por la mayor parte, es biçio comun de los reyes. No era bien regida en su presona*; ouo una grande dolençia de perlesia, de la cual non quedo bien suelta de la lengua nin libre del cuerpo.
+Murió en Valladolid en hedad de çincuenta años, año de mill e cuatroçientos e dies e ocho años.
+```
+
+Vuestra misión será codificar los siguientes elementos:
+
+- `<head>`: el título de la biografía
+- `<p>`: para los diferentes párrafos.
+- `<pb>` para indicar dónde empieza la hoja / página que estáis codificando.  Por ejemplo, `<pb n="19"/>`si se trata de la página 19.
+- `<persName>`: para los nombres de todos los personajes que aparecen en el texto.
+- `<placeName>`: para los nombres de lugar.
+- `<ref>`y `<note>` para las notas a pie de página. Una de las posibilidades que tenemos es la de codificar la referencia en el cuerpo del texto con `<ref>`, y después de `body`, crear un elemento `back`con una div que contenga todas las notas (`<note>`).
+
+Para los más atrevidos, también podéis regularizar el texto, señalando la lectura original y la regularización de la forma. Por ejemplo
+
+```xml
+<choice>
+	<orig>deste</orig>
+	<reg>de este</reg>
+</choice>
+```
+
+**[Paso 4]** Lo ideal es que mientras vayáis codificando os aseguréis que vuestro documento está bien formado y es válido, para ello os ayuda el sistema que explciamos en el [ejercicio anterior](https://tthub.io/beta/aprende/ejercicios/creacion-de-un-documento-tei) (Pasos 4 y 5).
+
+![FPG](https://github.com/tthub-repo/ejercicios/blob/master/img/5.FPG_Bordona_19.jpg?raw=true)
+
+![FPG](https://github.com/tthub-repo/ejercicios/blob/master/img/5.FPG_Bordona_20.jpg?raw=true)
