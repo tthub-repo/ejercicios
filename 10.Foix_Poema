@@ -1,4 +1,12 @@
-# Instruccions 
+---
+title: Codificació d'un poema
+layout: default
+---
+
+Aquest exercici consisteix en modelar la codificació d'un poema de J. V. Foix i fer-ne la codificació. El text que utilitzarem serà el de l'edició *On he deixat les claus...* publicada al 1953 que está digitalitzada a la [Biblioteca del Corpus Literari Digital](http://www.catedramariustorres.udl.cat/materials/biblioteca/index.php)  de la Càtedra Marius Torres. 
+
+
+# Codificación de un poema
 
 És quan dormo que hi veig clar
 És quan plou que ballo sol
