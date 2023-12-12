@@ -92,26 +92,13 @@ por vos he de morir y por vos muero.
 Vuestra misión será codificar los siguientes elementos:
 
 - `<head>`: el título del poema, si tiene
-- `<lg>`: para todo el poema.
+- [`<lg>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lg.html): para todo el poema.
 - `<lg>` : también para las estrofas
-- `l`: para cada uno de los versos
+- [`l`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-l.html): para cada uno de los versos
 
 Podéis también añadir atributos: 
 
 - Podéis añadir los atributos a algunos de los elementos, por ejemplo: `<lg type="XXX" rhyme="XXXX">`
-- Marcar la rima de los versos con el elemento `<rhyme>`.
+- Marcar la rima de los versos con el elemento [`<rhyme>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/examples-rhyme.html).
 
-Para los más atrevidos, también podéis regularizar el texto, señalando la lectura original y la regularización de la forma. Por ejemplo
-
-```xml
-<choice>
-	<orig>deste</orig>
-	<reg>de este</reg>
-</choice>
-```
-
-**[Paso 4]** Lo ideal es que mientras vayáis codificando os aseguréis que vuestro documento está bien formado y es válido, para ello os ayuda el sistema que explciamos en el [ejercicio anterior](https://tthub.io/beta/aprende/ejercicios/creacion-de-un-documento-tei) (Pasos 4 y 5).
-
-![FPG](https://github.com/tthub-repo/ejercicios/blob/master/img/5.FPG_Bordona_19.jpg?raw=true)
-
-![FPG](https://github.com/tthub-repo/ejercicios/blob/master/img/5.FPG_Bordona_20.jpg?raw=true)
+**[Paso 4]** Lo ideal es que mientras vayáis codificando os aseguréis que vuestro documento está bien formado y es válido.
