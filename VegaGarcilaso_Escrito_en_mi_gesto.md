@@ -82,18 +82,7 @@ Ahora ya debería ser válido el documento.
 - [`<title>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html): título de vuestro archivo digital (algo como "Codificación de un poema de Garcilaso de la Vega" por ejemplo.
 - [`<author>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-author.html): irá vuestro nombre
 - [`<publicationStmt>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html): las informaciones donde se ha realizado la codificación del archivo.  
-- [`<sourceDesc>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html): la fuente original en la que se basará vuestra edición. Para ello, sugiero que utilices el siguiente esquema:
-
-```xml
-<bibl>
-	<author></author>
-	<title></title>
-	<pubPlace></pubPlace>
-	<publisher></publisher>
-	<date></date>
-	<biblScope></biblScope>
-</bibl>
-```
+- [`<sourceDesc>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDesc.html): la fuente donde recuperamos el texto.
 
 **[Paso 7]** 
 
