@@ -20,9 +20,9 @@ Para este ejercicio codificaremos un soneto de Garcilaso de la Vega. Para ello, 
 
 Los pasos a seguir son los siguientes:  
 
-**[Paso 1]** Cread un documento XML-TEI (con el programa VsCode). 
+**[Paso 1]** Cread un documento XML-TEI (con el programa VsCode) (File > New / Archivo > Nuevo archivo de texto).  
 
-**[Paso 2]** Utilizad como declaración un esquema TEI All y copiad esta plantilla: 
+**[Paso 2]** Copiad esta plantilla y pegadla en el nuevo documento: 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -49,7 +49,12 @@ Los pasos a seguir son los siguientes:
 </TEI>
 ```
 
-**[Paso 3]** En el elemento `<teiHeader>` tendréis que completar las siguientes informaciones:
+**[Paso 3]** 
+Este nuevo documento utiliza un esquema de datos con un format .rng, que vive en línea. Al estar trabajando con un cortafuegos, puede ser que el documento no se os valide. Por ello, guardaremos este archivo en una carpeta llamada "Taller_TEI" y lo llamaremos "poema.xml". 
+
+Descargaremos ahora el esquema rng y lo guardaremos en la misma carpeta "Taller_TEI", clicando sobre este enlace: <http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng>
+
+**[Paso 4]** En el elemento `<teiHeader>` tendréis que completar las siguientes informaciones:
 
 - [`<title>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html): título de vuestro archivo digital (algo como "Codificación de un poema de Garcilaso de la Vega" por ejemplo.
 - [`<author>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-author.html): irá vuestro nombre
@@ -67,7 +72,9 @@ Los pasos a seguir son los siguientes:
 </bibl>
 ```
 
-**[Paso 3]** En el cuerpo del documento `text > body` debéis codificar el texto. Para facilitaros el ejercicio, aquí tenéis una transcripción fiel:
+**[Paso 5]** 
+
+En el cuerpo del documento `text > body` debéis codificar el texto. Para facilitaros el ejercicio, aquí tenéis una transcripción fiel:
 
 ```txt
 Escrito está en mi alma vuestro gesto, 		
@@ -101,4 +108,9 @@ Podéis también añadir atributos:
 - Podéis añadir los atributos a algunos de los elementos, por ejemplo: `<lg type="XXX" rhyme="XXXX">`
 - Marcar la rima de los versos con el elemento [`<rhyme>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/examples-rhyme.html).
 
-**[Paso 4]** Lo ideal es que mientras vayáis codificando os aseguréis que vuestro documento está bien formado y es válido.
+**[Paso 6]** 
+
+Lo ideal es que mientras vayáis codificando os aseguréis que vuestro documento está bien formado y es válido.
+
+
+[Editar en GitHub](https://github.com/tthub-repo/ejercicios/blob/master/VegaGarcilaso_Escrito_en_mi_gesto.md)
