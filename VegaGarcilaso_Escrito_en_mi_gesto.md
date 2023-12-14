@@ -20,9 +20,13 @@ Para este ejercicio codificaremos un soneto de Garcilaso de la Vega. Para ello, 
 
 Los pasos a seguir son los siguientes:  
 
-**[Paso 1]** Cread un documento XML-TEI (con el programa VsCode) (File > New / Archivo > Nuevo archivo de texto).  
+**[Paso 1]** 
 
-**[Paso 2]** Copiad esta plantilla y pegadla en el nuevo documento: 
+Cread un documento XML-TEI (con el programa VsCode) (File > New / Archivo > Nuevo archivo de texto).  
+
+**[Paso 2]** 
+
+Copiad esta plantilla y pegadla en el nuevo documento: 
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -49,12 +53,31 @@ Los pasos a seguir son los siguientes:
 </TEI>
 ```
 
-**[Paso 3]** 
-Este nuevo documento utiliza un esquema de datos con un format .rng, que vive en línea. Al estar trabajando con un cortafuegos, puede ser que el documento no se os valide. Por ello, guardaremos este archivo en una carpeta llamada "Taller_TEI" y lo llamaremos "poema.xml". 
+**[Paso 3]**
 
-Descargaremos ahora el esquema rng y lo guardaremos en la misma carpeta "Taller_TEI", clicando sobre este enlace: <http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng>
+Ahora guardaremos este archivo en una carpeta llamada "Taller_TEI" y lo llamaremos "poema.xml". 
 
-**[Paso 4]** En el elemento `<teiHeader>` tendréis que completar las siguientes informaciones:
+**[Paso 4]** 
+Este nuevo documento utiliza un esquema de datos con un format .rng, que vive en línea. Veamos si el documento está bien formado y si se os valida: abajo a la izquierda aparece un mensaje que pone "XML is valid". 
+
+Si es válido, todo bien. Si os pone que no es válido, continuad con el paso 5. 
+
+**[Paso 5]** 
+Al estar trabajando con un cortafuegos, puede ser que el documento no se os valide. Por ello, descargaremos el esquema rng y lo guardaremos en la misma carpeta "Taller_TEI", clicando sobre este enlace: <http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng> Una vez lo hayamos guardado con el nombre "tei_all.rng", tenemos que modificar esta línea de código: 
+
+```xml
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+```
+
+por esta: 
+
+```xml
+<?xml-model href="tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+```
+
+Ahora ya debería ser válido el documento.
+
+**[Paso 6]** En el elemento `<teiHeader>` tendréis que completar las siguientes informaciones:
 
 - [`<title>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html): título de vuestro archivo digital (algo como "Codificación de un poema de Garcilaso de la Vega" por ejemplo.
 - [`<author>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-author.html): irá vuestro nombre
@@ -72,7 +95,7 @@ Descargaremos ahora el esquema rng y lo guardaremos en la misma carpeta "Taller_
 </bibl>
 ```
 
-**[Paso 5]** 
+**[Paso 7]** 
 
 En el cuerpo del documento `text > body` debéis codificar el texto. Para facilitaros el ejercicio, aquí tenéis una transcripción fiel:
 
@@ -96,7 +119,7 @@ por vos nací, por vos tengo la vida,
 por vos he de morir y por vos muero.
 ```
 
-Vuestra misión será codificar los siguientes elementos:
+Ahora vuestra misión será codificar los siguientes elementos:
 
 - `<head>`: el título del poema, si tiene
 - [`<lg>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lg.html): para todo el poema.
@@ -108,7 +131,7 @@ Podéis también añadir atributos:
 - Podéis añadir los atributos a algunos de los elementos, por ejemplo: `<lg type="XXX" rhyme="XXXX">`
 - Marcar la rima de los versos con el elemento [`<rhyme>`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/examples-rhyme.html).
 
-**[Paso 6]** 
+**[Paso 8]** 
 
 Lo ideal es que mientras vayáis codificando os aseguréis que vuestro documento está bien formado y es válido.
 
