@@ -6,12 +6,12 @@ layout: default
 # Instalación de VS Code 
 
 1. Descarga e instalación: <https://code.visualstudio.com/Download>
-
 2. Configurar la lengua, buscando "Configure language", y elijan el idioma que quieran. 
-
 3. Instalación del plugin [Scholarly XML](https://marketplace.visualstudio.com/items?itemName=raffazizzi.sxml), siguiendo [estos pasos](https://tthub.io/aprende/tutorial/edicion-digital-con-VS-code/edicion-digital-con-VS-code/scholarly_xml) en el tutorial. 
-
-4. Intalar el plugin de [TEI Publisher](https://teipublisher.com/index.html), desde el programa [VS Code](https://marketplace.visualstudio.com/items?itemName=e-editiones.tei-publisher-vscode).
+4. [Spanish Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-es)
+5. [XML Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
+6. [XML Tools](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml)
+7. Intalar el plugin de [TEI Publisher](https://teipublisher.com/index.html), desde el programa [VS Code](https://marketplace.visualstudio.com/items?itemName=e-editiones.tei-publisher-vscode).
 
 
 # Codificación poema "Escrito está en mi alma vuestro gesto"
