@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tanto gentile e tanto onesta pare</title>
+                <author>Dante Alighieri</author>
+                <editor>Your name</editor>
+            </titleStmt>
+            <publicationStmt>
+                <p>Seminar Università di Verona, <date>20 May 2025</date>.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Public domain text from Dante’s <title>Vita nuova</title></p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <text>
+        <body>
+           
+                Tanto gentile e tanto onesta pare
+                
+               Tanto gentile e tanto onesta pare
+               la donna mia quand’ella altrui saluta,
+               ch’ogne lingua deven tremando muta,
+               e li occhi no l’ardiscon di guardare.
+               
+               Ella si va, sentendosi laudare,
+               benignamente d’umiltà vestuta;
+               e par che sia una cosa venuta
+               da cielo in terra a miracol mostrare.
+               
+               Mostrasi sì piacente a chi la mira,
+               che dà per li occhi una dolcezza al core,
+               che ’ntender no la può chi no la prova.
+               
+               E par che de la sua labbia si mova
+               un spirito soave pien d’amore,
+               che va dicendo a l’anima: Sospira.
+            
+        </body>
+    </text>
+</TEI>
