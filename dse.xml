@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My First Tale</title>
+                <author xml:id="author_id">John Doe</author>
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name xml:id="editor_id">Name of the Editor</name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>University of... </publisher>
+                <pubPlace>Address</pubPlace>
+                <date when="2025">2025</date>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <listWit>
+                    <witness xml:id="A"/>
+                    <witness xml:id="B"/>
+                    <witness xml:id="C"/>
+                    <witness xml:id="D"/>
+                    <witness xml:id="E"/>
+                </listWit>
+            </sourceDesc>
+            
+        </fileDesc>
+
+        <revisionDesc>
+            <change when="2025-05-21" who="#editor_id">Creation of the XML-TEI file.</change>
+        </revisionDesc>
+        
+    </teiHeader>
+
+
+    <text>
+
+        <body>
+            <div type="chap" n="1" xml:id="chap_1">
+                <head type="level2">Chapter I </head>
+
+                <p>In the spring of <date when="1927">1927</date>, <persName corresp="#Clara_Villard">Clara
+                        Villard</persName> arrived in <placeName>Trieste</placeName> to study the
+                    archives of <persName>Sigismund Klein</persName>, a reclusive scholar who had
+                    spent his final years in <placeName>Dubrovnik</placeName>.
+                        <persName>Clara</persName>, then only twenty-three, had been sent by
+                        <persName>Professor L. Harding</persName> of <placeName>Oxford</placeName>,
+                    who believed that Klein’s lost manuscript on <term corresp="#chronotopic_memory"
+                        >chronotopic memory</term><ref xml:id="n_note1" n="1" target="#note1"
+                        >1</ref> might surface. She stayed at a boarding house run by Giulia
+                    Cantarini, a widowed pianist with a collection of rare maps of Istria. Each
+                    evening, Clara would walk the Riva degli Schiavoni<ref xml:id="n_note2" n="2"
+                        target="#note2">1</ref>, comparing the fading shorelines with those marked
+                    on <persName>Giulia</persName>’s tattered<seg type="app" xml:id="a_app1"
+                        corresp="#app1">charts</seg>.</p>
+                <p>Her research took an unexpected turn when she uncovered a bundle of letters in
+                    the <placeName>Biblioteca Civica of Padua</placeName>, written by
+                        <persName>Aurelio Fontana</persName>, a forgotten diplomat turned mystic.
+                    The letters referenced the so-called <term corresp="#residual_doctrine">Doctrine
+                        of Residual Presence</term><ref xml:id="n_note3" n="3" target="#note3"
+                        >3</ref>, a term <persName>Clara</persName> had encountered only once
+                    before—in a footnote of an unpublished lecture by <persName>Klein</persName>
+                    himself. Torn between returning to <placeName>Oxford</placeName> and following
+                        <persName>Fontana</persName>’s trail to <placeName>Palermo</placeName>,
+                        <persName>Clara</persName> wrote to <persName>Harding</persName> for advice,
+                    enclosing transcriptions of the letters and her own speculative notes<ref
+                        xml:id="n_note4" n="4" target="#note4">4</ref>. The answer, however, never
+                    came. </p>
+
+            </div>
+
+            <div type="chap" n="2" xml:id="chap_2">
+                <head type="level2">Chapter II</head>
+                <!-- If there are subsections, use: 
+                
+                <div type="sec" n="1" xml:id="chap_2_sec_1">
+                    <head type="level3">1</head>
+                <p>...</p>
+                </div> -->
+                <p>Lorem ipsum dolor sit amet, consectetur <seg type="app" xml:id="a_app2"
+                        corresp="#app2">adipiscing</seg> elit. Mauris sit amet purus elementum
+                    ligula vulputate convallis eu nec nibh. Pellentesque vitae est eget enim blandit
+                    dictum. Aenean ut vulputate eros. Curabitur lorem orci, elementum ut fringilla
+                    a, dapibus congue enim. Vestibulum at viverra <seg type="app" xml:id="a_app3"
+                        corresp="#app3">turpis</seg>, quis sodales quam. Praesent accumsan leo ac
+                    nibh euismod, ac euismod erat accumsan. Curabitur fermentum augue lectus, id
+                    aliquam tellus porta ac. Aliquam eu justo ut tortor placerat consequat.
+                    Suspendisse dignissim nisi sed lorem dignissim malesuada. Suspendisse vulputate
+                    tempus velit, vel fermentum felis vehicula vitae. Mauris porta tortor dignissim
+                    massa egestas, pharetra ullamcorper enim aliquam. Mauris ultricies justo ac
+                    euismod lobortis. </p>
+                <p>Nam at pharetra quam. Aliquam laoreet mi diam, nec semper mauris viverra eget.
+                    Vestibulum eros augue, tempus nec posuere et, blandit viverra dolor. Vestibulum
+                    tristique quis dui sit amet sodales. Aliquam erat volutpat. Fusce ultricies
+                    magna mauris, vel faucibus turpis maximus quis. Vivamus sed nisl mattis, rhoncus
+                    urna a, ullamcorper nulla. </p>
+                <p>Sed ac imperdiet ex. Vestibulum quam quam, cursus et dolor at, pellentesque
+                    aliquam justo. Donec vitae dolor a tellus consequat ultrices. Praesent ultricies
+                    nulla in orci condimentum, eu mattis nibh iaculis. Nunc dapibus rhoncus est, ac
+                    convallis metus posuere et. Maecenas sit amet ex ac felis commodo malesuada.
+                    Integer condimentum elit a tortor interdum, nec lacinia eros scelerisque. Donec
+                    a blandit tellus, quis tincidunt ante. Phasellus lectus massa, egestas eget
+                    lobortis in, feugiat at sapien. Aliquam et nibh pharetra, dignissim felis vel,
+                    fringilla orci. </p>
+                <p>Pellentesque sagittis congue rutrum. Quisque vitae nisi nec ligula tincidunt
+                    tempor in sollicitudin elit. Aliquam erat volutpat. Aenean sit amet erat
+                    vestibulum, accumsan odio at, posuere dolor. Pellentesque non fringilla arcu,
+                    vel consectetur dui. Ut aliquet ligula ex, eu cursus ante pulvinar id. Aliquam
+                    viverra nibh vel condimentum cursus. Class aptent taciti sociosqu ad litora
+                    torquent per conubia nostra, per inceptos himenaeos. In eu viverra lacus. Donec
+                    tempus, elit id molestie scelerisque, lectus mauris vehicula enim, non sodales
+                    purus elit ac odio. Morbi tincidunt pharetra condimentum. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Vestibulum sit amet nisi vitae dolor
+                    convallis pharetra. </p>
+
+
+
+            </div>
+        </body>
+
+        <back>
+            <div xml:id="notes">
+
+                <note xml:id="note1" n="1" target="#n_note1">chronotopic memory A theoretical
+                    concept derived from literary theory—especially the work of Mikhail
+                    Bakhtin—referring to the fusion of time and space in narrative. In this context,
+                    it implies a structure of memory where places evoke specific temporal layers,
+                    often used to interpret texts with fragmented or layered timelines. </note>
+
+                <note xml:id="note2" n="2" target="#n_note2">Riva degli Schiavoni Traditionally, the
+                    waterfront promenade in Venice named after Slavic merchants. In this passage, it
+                    may be metaphorically applied to Trieste to evoke its Adriatic cosmopolitanism,
+                    even though the name does not strictly belong there—highlighting Clara’s
+                    symbolic mapping.</note>
+                <note xml:id="note3" n="3" target="#n_note3">Doctrine of Residual Presence A
+                    speculative philosophical idea attributed to fringe mystical thinkers of the
+                    early 20th century. It suggests that personal or historical identities leave
+                    enduring, perceivable traces in physical locations, documents, or even
+                    memories—though the doctrine lacks academic validation.</note>
+                <note xml:id="note4" n="4" target="#n_note4">Clara’s speculative notes These were
+                    later catalogued among the Harding Papers at Oxford but were not published until
+                    1953 in Posthumous Writings of the Viennese Circle. They reflect Clara’s early
+                    theories on intertextual mysticism, influenced by Klein and Fontana’s esoteric
+                    writings.</note>
+
+            </div>
+
+            <div xml:id="apparatus">
+                <head>Critical Apparatus</head>
+                <listApp>
+                    <app xml:id="app1" corresp="#a_app1" type="orthographic">
+                        <lem>chart</lem>
+                        <rdg wit="#A">charts</rdg>
+                        <rdg wit="#B">maps</rdg>
+                        <rdg wit="#C">papers</rdg>
+                    </app>
+                    <app xml:id="app2" corresp="#a_app2" type="orthographic">
+                        <lem>adipiscing</lem>
+                        <rdg wit="#A">dipiscing</rdg>
+                        <rdg wit="#B">adipliscing</rdg>
+                        <rdg wit="#C">adepiscing</rdg>
+                    </app>
+                    <app xml:id="app3" corresp="#a_app3" type="typographic">
+                        <lem>turpis</lem>
+                        <rdg wit="#A">turpe</rdg>
+                        <rdg wit="#B">turpibus</rdg>
+                        <rdg wit="#C">turtis</rdg>
+                    </app>
+
+
+                </listApp>
+            </div>
+
+            <div type="glossary">
+                <list type="glossary">
+                    <item>
+                        <term xml:id="chronotopic_memory">Chronotopic memory</term>
+                        <gloss>The fusion of time and space.</gloss>
+                    </item>
+                    <item>
+                        <term xml:id="residual_doctrine">Doctrine of Residual Presence</term>
+                        <gloss>Lingering traces of identity in places and memory.</gloss>
+                    </item>
+
+                </list>
+            </div>
+
+            <div type="bibliography">
+                <listBibl>
+                    <bibl xml:id="bibl1">
+                        <author>Lemaire, Juliette</author>.
+                        <title>Echoes in Stone: Identity and Space in Esoteric Histories</title>.
+                        <pubPlace>Paris</pubPlace>: <publisher>Éditions du Signe</publisher>, <date when="1934">1934</date>.
+                        <ref
+                            target="https://www."
+                        />
+                    </bibl>
+                    <bibl xml:id="bibl2">
+                        <author>Harding, Leonard</author>.
+                        <title>Traces of the Forgotten: Memory, Place, and Residual Thought</title>.
+                        <pubPlace>Oxford</pubPlace>: <publisher>Aldwych University Press</publisher>, <date when="1929">1929</date>.
+                        
+                    </bibl>
+                    <bibl xml:id="bibl3">
+                        <author>Fontana, Aurelio</author>.
+                        <title>On the Doctrine of Residual Presence</title>.
+                        <editor>Translated by Clara Villard</editor>. 
+                        <note>Unpublished typescript.</note> 
+                        <publisher>Biblioteca Civica di Padova</publisher>, <date when="1927">1927</date>.
+                    </bibl>
+
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>
